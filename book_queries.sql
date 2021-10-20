@@ -51,11 +51,11 @@ SELECT CONCAT(author_lname, " ", author_fname) AS Author,
 
 SELECT CONCAT (author_lname," " ,author_fname) AS FULL_name,
 
-        SUM(pages) AS "total pages read",
+        SUM(pages) AS "total pages written",
 
-        AVG(pages) AS "average number of pages read given the books each have read",
+        AVG(pages) AS "average number of pages written given the number of books each have wrote",
 
-        COUNT(pages) AS "books read"
+        COUNT(pages) AS "number of books written"
 
     FROM books GROUP BY FULL_NAME
     
